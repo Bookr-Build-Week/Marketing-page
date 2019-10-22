@@ -122,3 +122,152 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 2%;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 50%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.navBar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  font-size: 1.8rem;
+}
+.navBar .logo {
+  justify-content: flex-start;
+  width: 10%;
+  height: 10vh;
+}
+.navBar a {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.navBar a:hover {
+  text-decoration: none;
+  color: red;
+}
+footer {
+  color: solid black;
+  background: darkred;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .learn-more {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  justify-content: center;
+}
+.main .top-content-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+}
+.main .top-content-container .blurb-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.main .top-content-container .blurb-container p {
+  padding-right: 3%;
+}
+.main .top-content-container .blurb-container a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+}
+.main .top-content-container img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+.main hr {
+  text-decoration-style: dotted;
+  width: 90%;
+}
+.main .middle-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+.main .middle-content-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+.main .bottom-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .bottom-content-container .links-list {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 5%;
+}
+.main .bottom-content-container .links-list a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  padding-left: 18%;
+}
+.main .bottom-content-container .bookr {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 5%;
+}
