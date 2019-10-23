@@ -130,10 +130,11 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 h1,
 h2,
@@ -162,10 +163,6 @@ img {
   max-width: 50%;
   height: auto;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
 .navBar {
   display: flex;
   width: 100%;
@@ -173,6 +170,8 @@ img {
   align-items: center;
   background-color: black;
   font-size: 1.8rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .navBar .logo {
   justify-content: flex-start;
@@ -182,18 +181,29 @@ img {
 .navBar a {
   text-decoration: none;
   color: whitesmoke;
-  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .navBar a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 }
 .navBar a:hover {
   text-decoration: none;
   color: red;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .navBar a:hover {
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+  }
 }
 footer {
-  color: solid black;
-  background: darkred;
-  padding: 20px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 10px;
+  color: whitesmoke;
+  background-color: darkred;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +219,18 @@ footer {
 .main .top-content-container {
   display: flex;
   flex-direction: row;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+@media (max-width: 500px) {
+  .main .top-content-container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
 .main .top-content-container .blurb-container {
   display: flex;
@@ -217,8 +238,20 @@ footer {
   align-items: flex-start;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .main .top-content-container .blurb-container {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
 .main .top-content-container .blurb-container p {
   padding-right: 3%;
+}
+@media (max-width: 500px) {
+  .main .top-content-container .blurb-container p {
+    padding-right: 1%;
+    font-size: 1.3rem;
+  }
 }
 .main .top-content-container .blurb-container a {
   text-decoration: none;
@@ -228,25 +261,82 @@ footer {
   padding: 5px;
 }
 .main .top-content-container img {
-  width: 40%;
+  width: 35%;
   height: auto;
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .main .top-content-container img {
+    padding-right: 1%;
+  }
+}
 .main hr {
-  text-decoration-style: dotted;
-  width: 90%;
+  text-decoration-style: 2px solid black;
+  width: 100%;
 }
 .main .middle-content-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+}
+@media (max-width: 500px) {
+  .main .middle-content-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main .middle-content-container .books-container1 {
+  padding-right: 2%;
+}
+@media (max-width: 500px) {
+  .main .middle-content-container .books-container1 {
+    padding-bottom: 5%;
+  }
+}
+.main .middle-content-container .books-container2 {
+  padding-right: 2%;
+}
+@media (max-width: 500px) {
+  .main .middle-content-container .books-container2 {
+    padding-bottom: 5%;
+  }
+}
+.main .middle-content-container .books-container3 {
+  padding-right: 2%;
 }
 .main .middle-content-container2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+}
+.main .middle-content-container2 .books-container4 {
+  padding-right: 2%;
+}
+.main .middle-content-container2 .books-container5 {
+  padding-right: 2%;
+}
+.main .middle-content-container2 .books-container6 {
+  padding-right: 2%;
+}
+.main .middle-content-container2 .books-container6 .book6 {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .main .middle-content-container2 .middle-content-container {
+    padding-top: 0;
+  }
+  .main .middle-content-container2 .books-container5 {
+    display: none;
+  }
+  .main .middle-content-container2 .books-container6 {
+    display: none;
+  }
 }
 .main .bottom-content-container {
   display: flex;
@@ -256,18 +346,63 @@ footer {
 .main .bottom-content-container .links-list {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 5%;
+  align-items: center;
+  padding-top: 5%;
 }
 .main .bottom-content-container .links-list a {
   text-decoration: none;
   font-size: 1.3rem;
   color: black;
-  padding-left: 18%;
 }
 .main .bottom-content-container .bookr {
   display: flex;
   flex-direction: column;
   width: 60%;
   padding: 5%;
+}
+@media (max-width: 500px) {
+  .main .bottom-content-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .main .links-list {
+    width: 100%;
+  }
+  .main .bookr {
+    width: 100%;
+  }
+}
+.aboutus {
+  padding-top: 3%;
+}
+.aboutus h2 {
+  display: flex;
+  justify-content: center;
+}
+.middle-content-container3 .memberInfo {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+@media (max-width: 500px) {
+  .middle-content-container3 .memberInfo {
+    justify-content: flex-start;
+  }
+}
+.middle-content-container3 .memberInfo .memberpic1 {
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 500px) {
+  .middle-content-container3 .memberInfo .memberpic1 {
+    width: 100px;
+    height: 125px;
+  }
+}
+.middle-content-container3 .memberInfo .bio {
+  flex-direction: column;
+  padding-left: 2%;
+}
+.middle-content-container3 .memberInfo .bio h2 {
+  font-size: 1.8rem;
 }
