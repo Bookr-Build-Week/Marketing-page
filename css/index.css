@@ -298,7 +298,6 @@ footer {
 }
 .main .middle-content-container .books-container2 {
   padding-right: 2%;
-  align-items: center;
 }
 @media (max-width: 500px) {
   .main .middle-content-container .books-container2 {
@@ -311,7 +310,7 @@ footer {
 .main .middle-content-container2 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 2%;
@@ -324,9 +323,6 @@ footer {
 .main .middle-content-container2 .books-container4 {
   padding-right: 2%;
 }
-.main .middle-content-container2 .books-container4 .book4 {
-  width: 33%;
-}
 .main .middle-content-container2 .books-container5 {
   padding-right: 2%;
 }
@@ -335,9 +331,6 @@ footer {
     display: none;
   }
 }
-.main .middle-content-container2 .books-container5 .book5 {
-  width: 33%;
-}
 .main .middle-content-container2 .books-container6 {
   padding-right: 2%;
 }
@@ -345,6 +338,10 @@ footer {
   .main .middle-content-container2 .books-container6 {
     display: none;
   }
+}
+.main .middle-content-container2 .books-container6 .book6 {
+  width: 140px;
+  height: 200px;
 }
 .main .bottom-content-container {
   display: flex;
