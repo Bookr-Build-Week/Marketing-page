@@ -1,0 +1,65 @@
+.navBar {
+
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    background-color: black;
+
+    font-size: 1.8rem;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+       
+    .logo {
+
+        justify-content: flex-start;
+
+        width: 10%;
+
+        height: 10vh;
+
+    }
+
+    a {
+
+        text-decoration: none;
+
+        color: whitesmoke;
+
+        @media @phone {
+
+            text-decoration: none;
+
+            color: whitesmoke;
+
+        }
+        
+       &:hover {
+
+            text-decoration: none;
+
+            color: red;
+
+            cursor: pointer;
+
+            @media @phone {
+
+                text-decoration: none;
+
+                color: red;
+
+                cursor: pointer;
+
+            }
+
+        }     
+        
+    }
+        
+}
